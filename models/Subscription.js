@@ -11,7 +11,7 @@ Subscription.init(
       primaryKey: true,
       autoIncrement: true
     },
-    name: {
+    subscription_name: {
       type: DataTypes.STRING,
       allowNull: false
     }

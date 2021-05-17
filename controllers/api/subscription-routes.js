@@ -65,10 +65,10 @@ router.post('/', (req, res) => {
 });
 
 router.put('/:id', (req, res) => {
-  // update a tag's name by its `id` value
+  // update a subscription's name by its `id` value
   Subscription.update(
     {
-      subscription_name: req.body.tag_name
+      subscription_name: req.body.subscription_name
     },
     {
       where: {

@@ -59,7 +59,7 @@ router.post('/', (req, res) => {
           return UserSub.bulkCreate(userSubIdArr);
       }
       // if no user subscriptions, just respond
-      res.status(200).json(product);
+      res.status(200).json(user);
   })
     .then((userSubIds) => res.status(200).json(userSubIds))
     .then(dbUserData => {
@@ -126,16 +126,37 @@ router.put('/:id', (req, res) => {
       id: req.params.id
     }
   })
-    .then(dbUserData => {
-      if (!dbUserData) {
-        res.status(404).json({ message: 'No user found with this id' });
-        return;
-      }
-      res.json(dbUserData);
+    .then((user) => {
+        //find all associated subscriptions from UserSub
+        return UserSub.findAll({where: {user_id: req.params.id}});
     })
+    .then((userSubs) => {
+        //get list of current subscription_ids
+        const userSubIds = userSubs.map(({ subscription_id }) => subscription_id);
+        //create filtered list of new subscription_ids
+        const newUserSubs = req.body.subscriptionIds
+            .filter((subscription_id) => !userSubIds.includes(subscription_id))
+            .map((subscription_id) => {
+                return {
+                    user_id: req.params.id,
+                    subscription_id,
+                };
+            });
+        //figure out which ones to remove
+        const userSubsToRemove = userSubs
+            .filter(({ subscription_id }) => !req.body.subscriptionIds.includes(subscription_id))
+            .map(({ id }) => id);
+
+        //run both actions
+        return Promise.all([
+            UserSub.destroy({ where: { id: userSubsToRemove } }),
+            UserSub.bulkCreate(newUserSubs),
+        ]);
+    })
+    .then((updatedUserSubs) => res.json(updatedUserSubs))
     .catch(err => {
       console.log(err);
-      res.status(500).json(err);
+      res.status(400).json(err);
     });
 });
 
