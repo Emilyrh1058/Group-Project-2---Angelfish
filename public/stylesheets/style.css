@@ -17,7 +17,7 @@ body {
 
 /* HEADER/NAV STYLES */
 .logo {
-   /* Option 1 - logo-title*/
+  /* Option 1 - logo-title*/
   display: flex;
   align-items: center;
   flex-wrap: wrap;
