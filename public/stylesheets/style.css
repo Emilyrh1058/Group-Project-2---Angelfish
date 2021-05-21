@@ -16,9 +16,14 @@ body {
 }
 
 /* HEADER/NAV STYLES */
-logo {
-  float: left;
+.logo {
+   /* Option 1 - logo-title*/
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
 }
+
 header {
   padding: 20px 35px;
   background-color: var(--tertiary-color);
@@ -41,7 +46,7 @@ header h1 {
   font-size: 50px;
   color:  var(--primary-color);
   margin: 0; 
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 header a {
@@ -478,10 +483,17 @@ section {
       justify-content: center;
       position: relative;
   }
-      
+  
+    
   header h1 {
-      width: 100%;
-      text-align: center;
+    /* Option 1 - logo-title*/
+    width: 100%;
+    text-align: center;
+      
+    /* Option 2 - logo-title */  
+    /* display: none; */
+
+    
   }
       
   header nav ul {
