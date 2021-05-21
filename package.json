@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/Emilyrh1058/Group-Project-2---Angelfish#readme",
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.3",
     "bcrypt": "^5.0.1",
     "bulma": "^0.9.2",
     "connect-session-sequelize": "^7.1.1",
