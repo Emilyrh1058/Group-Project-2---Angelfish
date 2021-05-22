@@ -17,7 +17,7 @@ body {
 
 /* HEADER/NAV STYLES */
 .logo {
-  /* Option 1 - logo-title*/
+  /* Option 1 - logo-title */
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -67,7 +67,7 @@ header nav ul {
 }
 
 header nav ul li a {
-  padding: 10px 15px;
+  padding: 10px 30px;
   font-weight: lighter;
   font-size: 1.55vw;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
@@ -275,7 +275,7 @@ section {
   border-color:var(--tertiary-color);
 }
 
-/* WHAT WE DO SECTION STYLES */
+/* OUR MISSION SECTION STYLES */
 
 .intro p {
   line-height: 1.7;
@@ -286,7 +286,7 @@ section {
   text-align: center;
 }
 
-/* WHAT YOU DO SECTION STYLES */
+/* HOW TO HELP SECTION STYLES */
 
 .steps {
   background: var(--primary-color)
@@ -343,9 +343,9 @@ section {
   color: var(--secondary-color);
 }
 
-/* MEET THE TRAINERS */
+/* WHERE TO LOOK SECTION STYLES */
 
-.trainers {
+.resources {
   width: 100%;
   margin: 0 auto;
   display: flex;
@@ -353,33 +353,33 @@ section {
   justify-content: space-around;
 }
 
-.trainer {
+.resource {
   margin: 20px;
   background: var(--secondary-color);
   color: var(--primary-color);
   flex: 1;
 }
 
-.trainer img {
+.resource img {
   width: 100%;
 }
 
-.trainer-bio {
+.resource-card {
   padding: 25px;
   line-height: 1.3;
 }
 
-.trainer-bio h3 {
+.resource-card h3 {
   font-size: 28px;
 }
 
-.trainer-bio h4 {
+.resource-card h4 {
   font-weight: lighter;
   font-size: 22px;
   margin-bottom: 15px;
 }
 
-.trainer-bio p {
+.resource-card p {
   font-size: 17px;
 }
 
@@ -523,7 +523,7 @@ section {
       width: 80%;
   }
   
-  .trainer {
+  .resource {
       flex: 0 70%;
   }
   
@@ -575,7 +575,7 @@ section {
       width: 100%;
   }
   
-  .trainer {
+  .resource {
       flex: 0 100%;
   }
   
