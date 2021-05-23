@@ -115,14 +115,27 @@ section {
 /* HERO STYLES */
 
 .hero {
+  /* USE FOR MEDIA QUERY!!!!!
   background-image: url("../images/hero-img.jpg");
   background-size: cover;
-  background-position: 100%;
+  background-position: 100%; */
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   align-items: flex-start;
   background-attachment: fixed;
+}
+
+.video-container {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  object-fit: fill;
+  min-height: 100%;
+  overflow: hidden;
+  margin: auto;
+  z-index: -1000;
+  padding-bottom: 56.25%;
 }
 
 .hero-cta {
@@ -137,7 +150,7 @@ section {
 .hero-cta h2 {
   font-style: italic;
   font-size: 55px;
-  color:var(--primary-color);
+  color:var(--tertiary-color);
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
 }
 
