@@ -117,7 +117,7 @@ section {
 .hero {
   background-image: url("../images/hero-img.jpg");
   background-size: cover;
-  background-position: 80%;
+  background-position: 100%;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -126,8 +126,8 @@ section {
 }
 
 .hero-cta {
-  width: 35%;
-  text-align: right;
+  width: 50%;
+  text-align: center;
   margin: 3.5%;
   color: #fff;
   font-size: 18px;
