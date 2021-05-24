@@ -30,7 +30,12 @@
             <a href="#where-to-look">Where to Look</a>
           </li>
           <li>
-            <a href="#log-in"> Log In</a>
+            {{#if loggedIn}}
+                <a href="/dashboard">dashboard</a>
+                <button id="logout" class="btn-no-style">logout</button>
+            {{else}}
+                <a href="/login">login</a>
+            {{/if}}
           </li>
         </ul>
       </nav>
