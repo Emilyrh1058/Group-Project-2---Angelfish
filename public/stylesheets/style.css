@@ -126,7 +126,7 @@ section {
   background-attachment: fixed;
 }
 
-.video-container {
+/* .video-container {
   position: fixed;
   top: 0;
   bottom: 0;
@@ -136,6 +136,16 @@ section {
   margin: auto;
   z-index: -1000;
   padding-bottom: 56.25%;
+} */
+
+video {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1000;
 }
 
 .hero-cta {
