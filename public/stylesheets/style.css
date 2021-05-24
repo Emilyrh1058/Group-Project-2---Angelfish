@@ -126,18 +126,6 @@ section {
   background-attachment: fixed;
 }
 
-/* .video-container {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  object-fit: fill;
-  min-height: 100%;
-  overflow: hidden;
-  margin: auto;
-  z-index: -1000;
-  padding-bottom: 56.25%;
-} */
-
 video {
   object-fit: cover;
   width: 100vw;
