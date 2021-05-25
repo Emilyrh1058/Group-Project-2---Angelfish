@@ -394,6 +394,23 @@ video {
   font-size: 17px;
 }
 
+/* KIDS PAGE*/
+
+.iframe-container {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.iframe-container h2 {
+  font-style: italic;
+  font-size: 55px;
+  color:var(--tertiary-color);
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
+}
+
 /* REACH OUT STYLES */
 
 .contact {
