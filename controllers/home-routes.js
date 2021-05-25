@@ -18,4 +18,8 @@ router.get('/login', (req, res) => {
     res.render('login');
 });
 
+router.get('/kids', (req, res) => {
+    res.render('kids');
+});
+
 module.exports = router;

@@ -26,9 +26,18 @@
           <li>
             <a href="#where-to-look">Where to Look</a>
           </li>
+          {{#if loggedIn}}
+          <li>
+            <a href="/account">My Account</a>
+          </li>
+          <li>
+            <button id="logout" class="btn-no-style">Log Out</button>
+          </li>
+          {{else}}
           <li>
             <a href="/login"> Log In</a>
           </li>
+          {{/if}}
         </ul>
       </nav>
     </header>
