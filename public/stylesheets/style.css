@@ -152,7 +152,7 @@ video {
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
 }
 
-.hero-form {
+/* .hero-form {
   border: 3px solid var(--secondary-color);
   background-color: var(--primary-color);
   padding: 20px;
@@ -166,9 +166,9 @@ video {
 .hero-form h3 {
   font-size: 24px;
   margin: 0%;
-}
+} */
 
-.hero-form p {
+/* .hero-form p {
   margin: 5px 0 15px 0;
 }
 
@@ -182,9 +182,9 @@ video {
   margin-bottom: 15px;
   border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.75);
-}
+} */
 
-.form-input:focus {
+/* .form-input:focus {
   background-color: rgba(255, 255, 255, 1);
   outline: none;
 }
@@ -200,9 +200,9 @@ video {
   padding: 10px 20px;
   font-size: 16px;
   border-radius: 10px;
-}
+} */
 
-.hero-form button:hover {
+/* .hero-form button:hover {
   background-color: var(--tertiary-color); 
 }
 
@@ -215,9 +215,9 @@ video {
   left: 10px;
   margin: 10px;
   line-height: 1.6;
-}
+} */
 
-.checkbox-wrapper label::before, .radio-wrapper label::before {
+/* .checkbox-wrapper label::before, .radio-wrapper label::before {
   content: "";
   height: 20px;
   width: 20px;
@@ -226,9 +226,9 @@ video {
   position: absolute;
   top: -4px;
   left: -30px;
-}
+} */
 
-.radio-wrapper label::before {
+/* .radio-wrapper label::before {
   border-radius: 50%;
 }
 
@@ -242,9 +242,9 @@ video {
   left: -29px;
   top: -3px;
   background-image: radial-gradient(circle, var(--tertiary-color), var(--secondary-color));
-}
+} */
 
-.checkbox-wrapper label::after {
+/* .checkbox-wrapper label::after {
   content: "";
   height: 6px;
   width: 14px;
@@ -254,9 +254,9 @@ video {
   left: -26px;
   top: 1px;
   transform: rotate(-58deg);
-}
+} */
 
-.checkbox-wrapper input + label::after, 
+/* .checkbox-wrapper input + label::after, 
 .radio-wrapper input + label::after {
   content: none;
 }
@@ -264,7 +264,7 @@ video {
 .checkbox-wrapper input:checked + label::after, 
 .radio-wrapper input:checked + label::after {
   content: "";
-}
+} */
 
 /* SELECTION TITLE STYLES */
 
@@ -295,10 +295,6 @@ video {
   font-size: 20px;
   margin: 0 auto;
   text-align: center;
-}
-
-.intro h2 {
-  text-shadow: 0 0 10px (white, 80%);
 }
 
 /* HOW TO HELP SECTION STYLES */
@@ -417,8 +413,17 @@ video {
 .iframe-container h2 {
   font-style: italic;
   font-size: 55px;
+  padding-bottom: 30px;
   color:var(--tertiary-color);
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
+}
+
+.splash-bubbles img {
+  width: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
 }
 
 /* REACH OUT STYLES */
