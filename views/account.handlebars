@@ -1,0 +1,12 @@
+<section>
+    <h2>Welcome to your Angelfish Account</h2>
+    <h3>Your Subscriptions</h3>
+    <ol>
+        {{#each subscriptions as |subscriptions|}}
+        <li>
+            {{> subscriptions}}
+            <a href="/account/edit/">Manage Subscriptions</a>
+        </li>
+        {{/each}}
+    </ol>
+</section>
