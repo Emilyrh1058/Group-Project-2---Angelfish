@@ -371,6 +371,12 @@ video {
   flex: 1;
 }
 
+.resource .resource-card a {
+  text-decoration: none;
+  color: white;
+
+}
+
 .resource img {
   width: 100%;
 }
