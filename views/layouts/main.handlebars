@@ -4,20 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewpoint" content="width=device-width, initial-scale=1.0" />
     <title>angelfish - Ocean Conservation</title>
-    <!-- <link rel="stylesheet" href="./stylesheets/css/all.css"> -->
     <link rel="stylesheet" href="./stylesheets/style.css" />
   </head>
 
   <body>
     <!-- navigation -->
-    
     <header>
       <div class="logo">
         <img src="./images/logo redesign 2.png" alt="angelfish logo text"/>
         <h1>angelfish</h1>
       </div>
       
-
       <nav>
         <ul>
           <li>
@@ -30,12 +27,7 @@
             <a href="#where-to-look">Where to Look</a>
           </li>
           <li>
-            {{#if loggedIn}}
-                <a href="/homepage">Homepage</a>
-                <button id="logout" class="btn-no-style">Logout</button>
-            {{else}}
-                <a href="/login">login</a>
-            {{/if}}
+            <a href="#log-in"> Log In</a>
           </li>
         </ul>
       </nav>
@@ -43,6 +35,12 @@
 
     <!-- hero/jumbotron -->
     <section class="hero">
+      <div class="video-container">
+        <video autoplay loop muted>
+            <source src="./images/ocean_background_1.mp4" type="video/mp4">
+        </video>
+      </div>
+
       <div class="hero-cta">
         <h2>Get the latest news on our conservation efforts.</h2>
         <p></p>
@@ -152,42 +150,43 @@
         <article class="resource">
           <img
             src="./images/coral reef image.webp"
-            alt="Coral reef image with two angelfish"
-          />
+            alt="Coral reef image with two angelfish"/>
           <div class="resource-card">
             <h3 class="card-name">
               <a href= "https://www.coralrestoration.org/">Coral Reef Conservation and Restoration</a>
             </h3>
-            <!-- <h4 class=""></h4>
-            <p>Coral reef stuff</p> -->
           </div>
         </article>
 
         <article class="resource">
           <img
             src="./images/turtle img.jpg"
-            alt="Sea turtle swimming along the ocean floor"
-          />
+            alt="Sea turtle swimming along the ocean floor"/>
           <div class="resource-card">
             <h3 class="card-name">
               <a href= "https://www.marinebio.org/conservation/">Marine Life Conservation</a></h3>
-            <!-- <h4 class=""></h4>
-            <p>Marine life stuff</p> -->
           </div>
         </article>
 
         <article class="resource">
           <img
             src="./images/clean up img.jpg"
-            alt="People cleaning up the trash on a beach "
-          />
+            alt="People cleaning up the trash on a beach "/>
           <div class="resource-card">
             <h3 class="card-name">
               <a href="https://theoceancleanup.com/">Clean Up Efforts</a></h3>
-            <!-- <h4 class=""></h4>
-            <p>Clean up stuff</p> -->
           </div>
         </article>
+        <article class="resource">
+          <img
+            src="./images/Child_Seastar.jpg"
+            alt="Child looking at starfish in aquarium "/>
+          <div class="resource-card">
+            <h3 class="card-name">
+              <a href="kids.html">Kid's Educational Resources</a></h3>
+          </div>
+        </article>
+
       </div>
     </section>
 
@@ -198,7 +197,7 @@
       </div>
       <div class="contact-info">
         <div>
-          <h3>angelfish</h3>
+          <!-- <h3>angelfish</h3> -->
           <p>
             Any questions or concerns before signing up?
             <br />

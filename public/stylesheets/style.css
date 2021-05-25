@@ -297,6 +297,10 @@ video {
   text-align: center;
 }
 
+.intro h2 {
+  text-shadow: 0 0 10px (white, 80%);
+}
+
 /* HOW TO HELP SECTION STYLES */
 
 .steps {
@@ -508,6 +512,7 @@ video {
 
 .flex-row {
   display: flex;
+  text-shadow: 0 0 10px (white, 80%);
 }
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
