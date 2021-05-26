@@ -2,11 +2,11 @@
     <h2>Welcome to your Angelfish Account</h2>
     <h3>Your Subscriptions</h3>
     <ol>
-        {{#each subscriptions as |subscriptions|}}
+        {{#each subscriptionsArray as |subscription|}}
         <li>
-            {{> subscriptions}}
-            <a href="/account/edit/">Manage Subscriptions</a>
+            {{subscription}}
         </li>
         {{/each}}
     </ol>
+    <a href="/account/edit/">Manage Subscriptions</a>
 </section>
