@@ -24,3 +24,8 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+var submitBtn = document.getElementById("submitModal");
+submitBtn.onclick = function() {
+    modal.style.display = "none";
+}
