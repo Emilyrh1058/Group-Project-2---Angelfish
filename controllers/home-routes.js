@@ -19,7 +19,10 @@ router.get('/login', (req, res) => {
 });
 
 router.get('/kids', (req, res) => {
-    res.render('kids');
+    
+    res.render('kids', {
+        loggedIn: req.session.loggedIn
+    });
 });
 
 module.exports = router;
