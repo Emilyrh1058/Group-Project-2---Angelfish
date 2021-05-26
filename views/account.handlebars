@@ -1,4 +1,4 @@
-  {{> header}}
+  {{> other-header}}
 
 
 <section>
@@ -11,5 +11,17 @@
         </li>
         {{/each}}
     </ol>
-    <a href="/account/edit/">Manage Subscriptions</a>
+    <button id="modalBtn">Manage Subscriptions</button>
+    <!-- The Modal -->
+    <div id="subModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Some text in the Modal..</p>
+        </div>
+
+    </div>
 </section>
+
+<script src="/javascript/edit-subscriptions.js"></script>
