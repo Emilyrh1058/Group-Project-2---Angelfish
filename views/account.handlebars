@@ -1,0 +1,36 @@
+  {{> other-header}}
+
+
+<section>
+    <h2>Welcome to your Angelfish Account</h2>
+    <h3>Your Subscriptions</h3>
+    <ol>
+        {{#each subscriptionsArray as |subscription|}}
+        <li>
+            {{subscription}}
+        </li>
+        {{/each}}
+    </ol>
+    <button id="modalBtn">Manage Subscriptions</button>
+    <!-- The Modal -->
+    <div id="subModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="checkboxes">
+                <h1>Update your subscription preferences:</h1>
+                <li><input type="checkbox" name="fundraising-opportunity">Fundraising Opportunity</li>
+                <li><input type="checkbox" name="donation-request">Donation Request</li>
+                <li><input type="checkbox" name="volunteer-opportunity">Volunteer Opportunity</li>
+                <li><input type="checkbox" name="coral-reefs">Coral Reefs</li>
+                <li><input type="checkbox" name="marine-mammals">Marine Mammals</li>
+                <li><input type="checkbox" name="fish-facts">Fish Facts</li>
+            </div>
+            <button id="submitModal">Apply Changes</button>
+        </div>
+
+    </div>
+</section>
+
+<script src="/javascript/edit-subscriptions.js"></script>
