@@ -19,6 +19,11 @@ async function loginFormHandler(event) {
       } else {
           alert(response.statusText);
       }
+
+      const data = await response.json();
+      console.log(data);
+      var userData = {id: data.user.id, email: data.user.email, password}
+      localStorage.setItem("userInfo", JSON.stringify(userData));
   }
 }
 

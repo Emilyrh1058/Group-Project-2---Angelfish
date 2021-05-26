@@ -32,6 +32,7 @@ router.get('/', withAuth, (req, res) => {
     console.log(subscriptionsArray);
     res.render('account', {
         subscriptionsArray,
+        userId: req.session.user_id,
         loggedIn: req.session.loggedIn
     });
     })

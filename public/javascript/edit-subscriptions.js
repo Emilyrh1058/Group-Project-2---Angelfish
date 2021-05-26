@@ -26,6 +26,34 @@ window.onclick = function(event) {
 }
 
 var submitBtn = document.getElementById("submitModal");
-submitBtn.onclick = function() {
+submitBtn.onclick = async function() {
+    console.log("function");
+    var checkedSubs = document.querySelectorAll('.manage-subs');
+    var updateSubArray = [];
+    for (i=0; i < checkedSubs.length; i++) {
+        if (checkedSubs[i].checked) {
+            updateSubArray.push(+checkedSubs[i].value);
+        }
+    }
+    console.log(updateSubArray);
+    var userStr = localStorage.getItem("userInfo");
+    var userObj = JSON.parse(userStr);
+    const updateUser = await fetch(`/api/users/${userObj.id}`, {
+        method: 'put',
+        body: JSON.stringify({
+            email: userObj.email,
+            password: userObj.password,
+            subscriptionIds: updateSubArray
+        }),
+        headers: { 'Content-Type': 'application/json' }
+    })
+
+    if (updateUser.ok) {
+        document.location.reload();
+    } else {
+        alert(response.statusText);
+    }
+
     modal.style.display = "none";
+
 }
