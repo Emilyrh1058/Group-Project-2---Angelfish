@@ -137,6 +137,17 @@ section {
   background-attachment: fixed;
 }
 
+.account-hero {
+  background-image: url("../images/acct-img.jpg");
+  background-size: cover;
+  background-position: 100%;
+  display: left;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  background-attachment: fixed;
+}
+
 video {
   object-fit: cover;
   width: 100vw;
@@ -191,8 +202,21 @@ video {
   outline: none;
 }
 
-.login-form label {
-  margin: 0 5px;
+.account-page h2 {
+  color: white
+}
+
+.account-page button {
+  color:var(--primary-color);
+  background-color: var(--secondary-color);
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 10px;
+}
+
+.account-page button:hover {
+  background-color: var(--tertiary-color); 
 }
 
 .logout-btn {
@@ -206,6 +230,10 @@ video {
   background: none
   
 } 
+
+.login-form label {
+  margin: 0 5px;
+}
 
 .login-form button {
   color:var(--primary-color);

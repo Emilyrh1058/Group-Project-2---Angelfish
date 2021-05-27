@@ -1,36 +1,37 @@
     {{> other-header}}
 
 
-<section>
-    <h2>Welcome to your Angelfish Account</h2>
-    <h3>Your Subscriptions</h3>
-    <ol>
-        {{#each subscriptionsArray as |subscription|}}
-        <li>
-            {{subscription}}
-        </li>
-        {{/each}}
-    </ol>
-    <button id="modalBtn">Manage Subscriptions</button>
-    <!-- The Modal -->
-    <div id="subModal" class="modal">
+<section class="account-hero">
+    <div class="account-page"></div>
+        <h2>Welcome to your Angelfish Account</h2>
+        <h3>Your Subscriptions</h3>
+        <ol>
+            {{#each subscriptionsArray as |subscription|}}
+            <li>
+                {{subscription}}
+            </li>
+            {{/each}}
+        </ol>
+        <button id="modalBtn">Manage Subscriptions</button>
+        <!-- The Modal -->
+        <div id="subModal" class="modal">
 
-        <!-- Modal content -->
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <div id="checkboxes">
-                <h1>Update your subscription preferences:</h1>
-                <li><input type="checkbox" class="manage-subs" value="1" name="fundraising-opportunity">Fundraising Opportunity</li>
-                <li><input type="checkbox" class="manage-subs" value="2" name="donation-request">Donation Request</li>
-                <li><input type="checkbox" class="manage-subs" value="3" name="volunteer-opportunity">Volunteer Opportunity</li>
-                <li><input type="checkbox" class="manage-subs" value="4" name="coral-reefs">Coral Reefs</li>
-                <li><input type="checkbox" class="manage-subs" value="5" name="marine-mammals">Marine Mammals</li>
-                <li><input type="checkbox" class="manage-subs" value="6" name="fish-facts">Fish Facts</li>
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div id="checkboxes">
+                    <h1>Update your subscription preferences:</h1>
+                    <li><input type="checkbox" class="manage-subs" value="1" name="fundraising-opportunity">Fundraising Opportunity</li>
+                    <li><input type="checkbox" class="manage-subs" value="2" name="donation-request">Donation Request</li>
+                    <li><input type="checkbox" class="manage-subs" value="3" name="volunteer-opportunity">Volunteer Opportunity</li>
+                    <li><input type="checkbox" class="manage-subs" value="4" name="coral-reefs">Coral Reefs</li>
+                    <li><input type="checkbox" class="manage-subs" value="5" name="marine-mammals">Marine Mammals</li>
+                    <li><input type="checkbox" class="manage-subs" value="6" name="fish-facts">Fish Facts</li>
+                </div>
+                <button id="submitModal">Apply Changes</button>
             </div>
-            <button id="submitModal">Apply Changes</button>
-        </div>
 
-    </div>
+        </div>
 </section>
 
 <script src="/javascript/edit-subscriptions.js"></script>
