@@ -375,8 +375,9 @@ video {
 
 .resources {
   width: 100%;
-  margin: 0 auto;
+  margin: 10px;
   display: flex;
+  flex: 1;
   flex-wrap: wrap;
   justify-content: space-around;
 }
@@ -441,7 +442,6 @@ video {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  
 }
 
 /* REACH OUT STYLES */
