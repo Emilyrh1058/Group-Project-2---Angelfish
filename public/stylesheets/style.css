@@ -421,6 +421,10 @@ video {
 
 /* KIDS PAGE*/
 
+.kids-resource {
+  padding: 20px;
+}
+
 .iframe-container {
   width: 100%;
   margin: 0 auto;
@@ -437,7 +441,7 @@ video {
   /* text-shadow: 0 0 10px rgba(0, 0, 0, 0.5) */
 }
 
-.splash-bubbles img {
+.splash-bubbles img{
   width: 80%;
   display: block;
   margin-left: auto;
