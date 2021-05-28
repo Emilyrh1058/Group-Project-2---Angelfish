@@ -89,6 +89,7 @@ footer {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  position: sticky;
 }
 
 footer h2 {
@@ -139,6 +140,8 @@ section {
 
 .account-hero {
   background-image: url("../images/acct-img.jpg");
+  min-height: 100%;
+  min-width: 1024px;
   background-size: cover;
   background-position: 100%;
   display: left;
@@ -146,6 +149,30 @@ section {
   flex-wrap: wrap;
   align-items: flex-start;
   background-attachment: fixed;
+  font-size: 20px;
+}
+
+.submitModal {
+  width: 40%;
+  border: none;
+  background: var(--primary-color);
+  color: var(--secondary-color);
+  text-align: center;
+  padding: 15px 0;
+  font-size: 16px;
+  border-radius: 10px;
+  margin-top: 15px;
+}
+
+.submitModal:hover {
+  color: var(--primary-color);
+  background: var(--tertiary-color); 
+}
+
+
+.account-hero h3 {
+  text-decoration: underline;
+  color: var(--primary-color);
 }
 
 video {
@@ -206,17 +233,25 @@ video {
   color: white
 }
 
-.account-page button {
-  color:var(--primary-color);
-  background-color: var(--secondary-color);
-  border: none;
-  padding: 10px 20px;
-  font-size: 16px;
-  border-radius: 10px;
+.manage-subs {
+  padding-right: 20px;
 }
 
-.account-page button:hover {
-  background-color: var(--tertiary-color); 
+.manageBtn {
+  width: 20%;
+  border: none;
+  background: var(--primary-color);
+  color: var(--secondary-color);
+  text-align: center;
+  padding: 15px 0;
+  font-size: 16px;
+  border-radius: 10px;
+  margin-top: 15px;
+}
+
+.manageBtn:hover {
+  color: var(--primary-color);
+  background: var(--tertiary-color); 
 }
 
 .logout-btn {
@@ -446,7 +481,7 @@ video {
 .contact-info p, .contact-info address {
   margin: 20px 0;
   line-height: 1.5;
-  font-size: 28px;
+  font-size: 20px;
   font-style: normal;
 }
 
