@@ -1,7 +1,7 @@
 :root {
-  --primary-color: #04027c;
-  --secondary-color: #009cf0;
-  --tertiary-color: #ffffff; 
+  --primary-color: rgb(0, 0, 102, 0.5);
+  --secondary-color: rgb(150, 166, 255, 0.5);
+  --tertiary-color: rgb(255, 255, 255, 0.5);
 }
 
 * {
@@ -287,7 +287,7 @@ video {
 
 .section-title {
   font-size: 48px;
-  color: var(--secondary-color);
+  color: var(--tertiary-color);
   border-bottom: 3px solid;
   padding-bottom: 20px;
   text-align: center;
@@ -295,19 +295,15 @@ video {
   width: 50%;
 }
 
-.primary-border {
-  border-color: var(--primary-color);
-}
-
-.secondary-border {
-  border-color:var(--tertiary-color);
+.primary-border .secondary-border {
+  border-color: var(--tertiary-color);
 }
 
 /* OUR MISSION SECTION STYLES */
 
 .intro p {
   line-height: 1.7;
-  color: var(--secondary-color);
+  color: var(--tertiary-color);
   width: 80%;
   font-size: 30px;
   margin: 0 auto;
