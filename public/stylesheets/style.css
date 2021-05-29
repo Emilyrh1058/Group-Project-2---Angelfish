@@ -347,8 +347,12 @@ video {
   max-width: 100%;
 }
 
-.step-text {
+.step-text  {
   flex: 12;
+}
+
+.step-text a {
+  text-decoration: none;
 }
 
 .step-text a:visited {
