@@ -450,10 +450,6 @@ video {
   background: var(--secondary-color);
 }
 
-.contact h2 {
-  color: var(--primary-color);
-}
-
 .contact-info {
   display: flex;
   justify-content: space-between;
@@ -474,7 +470,7 @@ video {
 }
 
 .contact-info h3 {
-  color: var(--primary-color);
+  color: rgb(0, 0, 102);
   font-size: 35px;
 }
 
