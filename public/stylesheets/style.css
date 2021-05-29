@@ -351,6 +351,11 @@ video {
   flex: 12;
 }
 
+.step-text a:visited {
+  text-decoration: none; 
+  color: var(--tertiary-color); 
+}
+
 .step-text p {
   color: var(--tertiary-color);
   font-size: 25px;
