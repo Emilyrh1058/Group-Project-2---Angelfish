@@ -1,6 +1,6 @@
 # angelfish
 
-![homepage](/public/images/homepage.jpg)
+![homepage](/public/images/homepage.gif)
 
 ## Mission
 
