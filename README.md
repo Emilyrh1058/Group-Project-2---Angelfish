@@ -3,7 +3,7 @@
 [Emily Salinas](https://github.com/Emilyrh1058), 
 [Courtney Brown](https://github.com/courtlb), 
 [Clifford Crowell](https://github.com/cliffybar), 
-[Noah Harbison](),
+[Noah Harbison](https://github.com/nizzyno),
 [Lynn Rosas](https://github.com/rltrosas88)
 
 ## Table of Contents
