@@ -326,9 +326,9 @@ video {
 }
 
 .step h3 {
-  color: var(--secondary-color);
   font-size: 46px;
   flex: 1 30%;
+  color: white;
 }
 
 .step-info {
@@ -352,14 +352,14 @@ video {
 }
 
 .step-text p {
-  color: var(--tertiary-color);
+  color: white;
   font-size: 25px;
 }
 
 .step-text h4 {
   font-size: 26px;
   line-height: 1.5;
-  color: var(--secondary-color);
+  color: rgba(255, 255, 133, 0.952);
 }
 
 /* WHERE TO LOOK SECTION STYLES */
