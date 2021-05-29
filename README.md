@@ -1,6 +1,11 @@
 # Group Project 2 - angelfish
 ### Contributors:
-[Emily Salinas](https://github.com/Emilyrh1058), Courtney Brown, Clifford Crowell, Noah Harbison, and Lynn Rosas
+[Emily Salinas](https://github.com/Emilyrh1058), 
+[Courtney Brown](https://github.com/courtlb), 
+[Clifford Crowell](https://github.com/cliffybar), 
+[Noah Harbison](),
+[Lynn Rosas](https://github.com/rltrosas88)
+
 ## Table of Contents
 -   [Description](#description)
 -   [Demo](#demo)
