@@ -26,7 +26,7 @@ body {
 
 header {
   padding: 20px 35px;
-  background-color: var(--tertiary-color);
+  background-color: white;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
