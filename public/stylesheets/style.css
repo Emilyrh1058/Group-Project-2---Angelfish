@@ -199,7 +199,7 @@ video {
   /* text-shadow: 0 0 10px rgba(0, 0, 0, 0.5) */
 }
 
-.login-form {
+.login-form, .signup-form {
   border: 3px solid var(--secondary-color);
   background-color: var(--primary-color);
   padding: 20px;
@@ -268,7 +268,7 @@ video {
   margin: 0 5px;
 }
 
-.login-form button {
+.login-form button, .signup-form button {
   color:var(--primary-color);
   background-color: var(--secondary-color);
   border: none;
@@ -277,7 +277,7 @@ video {
   border-radius: 10px;
 }
 
-.login-form button:hover {
+.login-form button:hover, .signup-form button:hover {
   background-color: var(--tertiary-color); 
 }
 
