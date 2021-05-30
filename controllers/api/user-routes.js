@@ -49,7 +49,7 @@ router.post('/', (req, res) => {
   User.create(req.body)
   .then((user) => {
       //if there's user subscriptions, we need to create pairings to bulk create in the UserSub model
-      if (req.body.subscriptionIds.length) {
+      if (req.body.subscriptionIds) {
           const userSubIdArr = req.body.subscriptionIds.map((subscription_id) => {
               return {
                   user_id: user.id,

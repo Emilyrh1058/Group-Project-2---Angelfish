@@ -27,7 +27,7 @@
 1. JavaScript
 2. Handlebars
 3. CSS
-6. xpress
+6. express
 4. MySQL
 5. Sequelize
 7. Express
