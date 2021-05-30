@@ -357,7 +357,7 @@ video {
 }
 
 .step-text a {
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 .step-text a:visited {
