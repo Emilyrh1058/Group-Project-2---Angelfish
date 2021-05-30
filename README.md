@@ -36,7 +36,7 @@
 <br>
 
 ## Heroku Link
-
+[See the deployed application in Heroku here](https://angelfish-group.herokuapp.com/)
 
 <br>
 
